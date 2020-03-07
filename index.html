@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="HTTP 403 錯誤頁面" />
+    <meta property="og:description" content="客戶端錯誤狀態碼表示伺服器理解該請求但拒絕核准。該狀態碼與 HTTP 401 類似，但重新身分驗證不能提供幫助。存取被永久性禁止，且與應用程式邏輯有關，如資源的訪問權限不足。" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/403-error-page.css">
+    <title>HTTP 403 錯誤頁面</title>
+</head>
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700,900" rel="stylesheet">
+
+    <div id="sign-wrapper">
+        <div id="hole-1" class="hole"></div>
+        <div id="hole-2" class="hole"></div>
+        <div id="hole-3" class="hole"></div>
+        <div id="hole-4" class="hole"></div>
+        <header id="header">
+            <h1>403<br/>禁止存取</h1>
+            <div id="strike-1" class="strike"></div>
+            <div id="strike-2" class="strike"></div>
+        </header>
+        <section id="sign-body">
+            <div id="copy-container">
+                <h2>禁止進入</h2>
+                <p><strong>錯誤 403：禁止存取</strong>。你沒有權限瀏覽頁面。</p>
+            </div>
+            <div id="circle-container">
+                <svg version="1.1" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+                    <defs>
+                        <pattern id="image" patternUnits="userSpaceOnUse" height="450" width="450">
+                            <image x="25" y="25" height="450" width="450" xlink:href="images/portrait.png"></image>
+                        </pattern>
+                    </defs>
+                    <circle cx="250" cy="250" r="200" stroke-width="40px" stroke="#ef5350" fill="url(#image)" />
+                    <line x1="100" y1="100" x2="400" y2="400" stroke-width="40px" stroke="#ef5350" />
+                </svg>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
